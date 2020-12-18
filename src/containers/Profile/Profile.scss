@@ -1,0 +1,18 @@
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerProfile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+
+.moviePhoto{
+    margin-top: 1em;
+    width: 30%;
+}
