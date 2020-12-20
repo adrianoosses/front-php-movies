@@ -14,6 +14,7 @@ const Login = (props) => {
             event.preventDefault();
             let msgReceived = await axios.post('http://127.0.0.1:8000/api/login', {email, password});
             let token = await msgReceived.data.token;
+            console.log("msgReceived: ", msgReceived);
             localStorage.setItem('tokenUsr', token);
             localStorage.setItem('email', email);
             console.log("Email: ", email);

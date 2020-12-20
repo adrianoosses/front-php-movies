@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # FRONTEND REACT MOVIES APP
 Movie service app frontend
 ## TABLE OF CONTENTS
@@ -41,6 +40,3 @@ If you click on image, app shows details of movie selected.
 <a name="author"></a>
 ## AUTHOR
 Adriano Osses
-=======
-# front-php-movies
->>>>>>> 87658acfc4723c268c02a05ad29b60ca9b3b3559
