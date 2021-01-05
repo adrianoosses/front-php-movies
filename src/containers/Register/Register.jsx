@@ -14,12 +14,15 @@ const Register = () => {
             const user = {         
                 "name": form.name.value,
                 "password": form.password.value,
-                "email": form.email.value ,
-                "role": form.role.value,
+                "email": form.email.value,
+                "lastName": form.lastName.value,
+                "phone": form.phone.value,
+                "address": form.address.value,
+                //"role": form.role.value,
             }
             console.log("user: ", user);
             console.log("type of user: ", typeof user);
-            await axios.post('https://backend-movie-service.herokuapp.com/user/', user)
+            await axios.post('http://127.0.0.1:8000/api/auth/signup', user)
             //notification.success({ message: 'Registered!', description: 'User successfully registered' })
             history.push('/login')
         } catch (error) {
@@ -36,6 +39,9 @@ const Register = () => {
                 <p>Name: <input type="text" name="name" placeholder="Name" /></p>
                 <p>Password: <input type="password" name="password" placeholder="Password" /></p>
                 <p>Email: <input type="email" name="email" placeholder="Email" /></p>
+                <p>Last name: <input type="text" name="lastName" placeholder="Last Name" /></p>
+                <p>Phone: <input type="text" name="phone" placeholder="Phone" /></p>
+                <p>Address: <input type="text" name="address" placeholder="Address" /></p>
                 <p>Role: <input type="text" name="role" placeholder="Role" /></p>
                 <button type="submit">Register now!</button>
                 <p/>
