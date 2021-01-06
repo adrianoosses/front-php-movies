@@ -14,7 +14,11 @@ Download and run on terminal typing:
 npm start
 ```
 
+Note that you may also need to install dependencies writing on terminal:
 
+```
+npm install
+```
 <a name="be"></a>
 ## DATABASE
 https://developers.themoviedb.org/
