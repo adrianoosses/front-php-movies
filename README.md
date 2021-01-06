@@ -39,4 +39,6 @@ If you click on image, app shows details of movie selected.
 
 <a name="author"></a>
 ## AUTHOR
-Adriano Osses
+Adriano Osses <br>
+Elena Sánchez de la Blanca  <br>
+Oscar Soler  <br>

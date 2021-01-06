@@ -19,8 +19,8 @@ export default class Profile extends Component {
             console.log("token", token);
             console.log("get profile");
             let email = localStorage.getItem('email');
-            let reqUser = await axios.get(`https://backend-movie-service.herokuapp.com/user/profile?email=${email}`, 
-            { headers: {authorization: token} });
+            let reqUser = await axios.get(`http://127.0.0.1:8000/api/getUser/${email}`);
+            //{ headers: {authorization: token} });
             
             
             this.setState({userArr: await reqUser.data})
