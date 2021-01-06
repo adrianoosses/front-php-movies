@@ -9,13 +9,6 @@ Movie service app frontend
 
 <a name="inst"></a>
 ## SET UP
-### OPTION 1:
-- Github Page: https://adrianoosses.github.io/frontend-react-movies/
-<br>
-- Heroku: https://frontend-movies-app.herokuapp.com/
-
-Backend: https://github.com/adrianoosses/backend-movies.git
-### OPTION 2:
 Download and run on terminal typing:
 ```
 npm start
