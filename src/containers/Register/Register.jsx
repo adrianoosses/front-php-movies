@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios'
 import { useHistory } from 'react-router-dom';
-//import { notification } from 'antd'
+import { notification } from 'antd'
 import '../../App.css'
 
 const Register = () => {
@@ -23,11 +23,11 @@ const Register = () => {
             console.log("user: ", user);
             console.log("type of user: ", typeof user);
             await axios.post('http://127.0.0.1:8000/api/auth/signup', user)
-            //notification.success({ message: 'Registered!', description: 'User successfully registered' })
+            notification.success({ message: 'Registered!', description: 'User successfully registered' })
             history.push('/login')
         } catch (error) {
             console.error(error)
-            //notification.error({ message: 'Register failed', description: 'there was a problem trying to register the user' })
+            notification.error({ message: 'Register failed', description: 'there was a problem trying to register the user' })
         }
 
     }

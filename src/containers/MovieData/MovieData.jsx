@@ -33,7 +33,7 @@ class MovieList extends Component {
             
             //console.log("email", email);
             let token =  localStorage.getItem('tokenUsr');
-            let reqUser = await axios.get(`https://backend-movie-service.herokuapp.com/user/profile?email=${this.state.email}`,
+            let reqUser = await axios.get(`http://127.0.0.1:8000/api/getUser/${this.state.email}`,
             { headers: {authorization: token} });
             let idUser = await reqUser.data._id;
             console.log(reqUser.data._id)
